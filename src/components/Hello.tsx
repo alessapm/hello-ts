@@ -6,6 +6,10 @@ export interface Props {
   enthusiasmLevel?: number;
 }
 
+function getExclamationMarks(numChars: number) {
+  return Array(numChars + 1).join('!');
+}
+
 function Hello({name, enthusiasmLevel = 1}: Props){
   if(enthusiasmLevel <= 0){
     throw new Error('You should be more enthusiastic :0) ');
@@ -20,9 +24,4 @@ function Hello({name, enthusiasmLevel = 1}: Props){
   );
 }
 
-
 export default Hello;
-
-function getExclamationMarks(numChars: number) {
-  return Array(numChars + 1).join('!');
-}
