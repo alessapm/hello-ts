@@ -3,7 +3,15 @@ import * as ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 
+// components
+import Hello from './components/Hello.tsx';
+
+
 ReactDOM.render(
-  <App />,
+  <Hello name="TypeScript" enthusiasmLevel={10} />,
   document.getElementById('root') as HTMLElement
 );
+
+
+
+
